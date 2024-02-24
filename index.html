@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>Order Fast Food Online from the Best Nearest Restaurant</title>
+    <style>
+        body {
+            background-color: #fff;
+        }
+
+        .header {
+            height: 12vh;
+            /* box-shadow: 0px 2px 0px rgba(143, 143, 143, 0.137); */
+        }
+
+        .small_header{
+            height: 1vh;
+        }
+
+        .next {
+            width: 70%;
+
+        }
+
+        .back {
+            width: 22vw;
+            height: 15vw;
+        }
+
+        .bg1 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(main_pizza.jpg);
+            background-size: cover;
+            background-position: 20% 10%;
+
+        }
+
+        .bg2 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(main_burger4.jpg);
+            background-size: cover;
+            background-position: 50% 40%;
+        }
+
+        .bg3 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(main_pav_bhaji2.jpg);
+            background-size: cover;
+            background-position: 20% 20%;
+        }
+
+        .bg4 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(main_steam_momos.jpg);
+            background-size: cover;
+            background-position: 20% 10%;
+
+        }
+
+        .bg5 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(main_fried_momos.jpg);
+            background-size: cover;
+            background-position: 20% 10%;
+        }
+
+        .bg6 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(main_Maggi.jpg);
+            background-size: cover;
+            background-position: 20% 10%;
+        }
+
+        .bg7 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(main_chilli_potato.jpg);
+            background-size: cover;
+            background-position: 20% 10%;
+
+        }
+
+        .bg8 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(main_manchurian.jpg);
+            background-size: cover;
+            background-position: 20% 90%;
+        }
+
+        .bg9 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(main_veg_biryani.jpg);
+            background-size: cover;
+            background-position: 20% 90%;
+        }
+
+        .bg10 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(main_roll.jpg);
+            background-size: cover;
+            background-position: 20% 10%;
+
+        }
+
+        .bg11 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(main_pasta.jpg);
+            background-size: cover;
+            background-position: 50% 60%;
+        }
+
+        .bg12 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(main_chole_bhature_2.jpg);
+            background-size: cover;
+            background-position: 20% 10%;
+        }
+
+
+        .small:hover{
+        scale:0.9;
+        transition: all 0.4s;
+        }
+        .big:hover{
+            scale:1.1;
+            transition: all 0.5s;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- navbar for devices smaller than or equal to md -->
+
+    <div class="bg-[#FFFFFF] small_header flex md:hidden mt-3 justify-between items-center p-4">
+        <div class="left">
+            <!-- <img src="Swiggy-logo.png" height="120px" width="120px" alt="logo"> -->
+            <h1 class="text-2xl text-black">Zomato</h1>
+        </div>
+        <div class="center">
+            
+        </div>
+        <div class="right">
+            <a href="#" class="text-2xl text-red-700"><button class="bg-red-700 text-white text-[20px] h-9 w-16 rounded-sm">login</button></a><i class="fa-solid fa-user-plus ml-2"></i>
+        </div>
+    </div>
+    <br>
+
+
+    <!-- navbar for devices greater than or equal to md -->
+
+    <div class="header bg-[#FFFFFF] hidden md:flex justify-evenly items-center border-b-[1px] border-b-transparent p-2">
+        <div class="left">
+            <img src="Swiggy-logo.png" height="120px" width="120px" alt="logo">
+        </div>
+        <div class="right gap-12 flex">
+            <!-- <span class="text-[1.2rem]">Home</span> -->
+            <span class="text-[18px] text-[#3d4152]"><a href="#">Offers</a></span>
+            <span class="text-[18px] text-[#3d4152]"><i class="fa-solid fa-circle-info mr-2"></i><a
+                    href="#">Help</a></span>
+            <span class="text-[18px] text-[#3d4152]"><a href="#">Contact</a></span>
+            <span class="text-[18px] text-[#3d4152]"><a href="#">login</a><i
+                    class="fa-solid fa-user-plus ml-2"></i></span>
+        </div>
+        <hr>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="next mx-auto">
+        <h1 class="text-[1.5rem] mb-6 font-bold">What's on your mind?</h1>
+        <!-- <hr> -->
+        <div class="images flex justify-around">
+            <div class="image1 big"><img src="burger.jpg" height="150px" width="150px" alt="Burger"></div>
+            <div class="image2 big"><img src="pizza.jpg" height="150px" width="150px" alt="Pizza"></div>
+            <div class="image3 big"><img src="pavBhaji.jpg" height="150px" width="150px" alt="PavBhaji"></div>
+            <div class="image6 big"><img src="momos.jpg" height="150px" width="150px" alt="Momos"></div>
+            <div class="image4 big"><img src="chooleBhature.jpg" height="150px" width="150px" alt="chooleBhature"></div>
+            <div class="image5 big"><img src="main_noodles.avif" height="150px" width="150px" alt="Rolls"></div>
+        </div>
+        <hr>
+    </div>
+
+    <div class="Discount mt-10 next mx-auto">
+        <img src="50_off.jpg" alt="Discount">
+    </div>
+
+
+    <!-- first_grid -->
+
+    <div class="next mx-auto mb-10">
+        <h1 class="text-[1.5rem] mt-10 mb-10 font-bold">Order From Best Restaurants</h1>
+        <!-- <hr> -->
+        <div class="images grid grid-cols-3 justify-around">
+            <div class="one small">
+                <div class="back bg1 rounded-2xl">
+                </div>
+                <p class="text-2xl text-gray-800 font-medium mt-2 text-center">Hot Pizza</p>
+                <!-- <p class="text-[20px] p-1 text-gray-600">Delivery will be in 5-12 min </p> -->
+            </div>
+
+            <div class="one small">
+                <div class="back bg2 rounded-2xl">
+                </div>
+                <p class="text-2xl text-gray-800 mt-2 text-center font-medium">Crispy Burger</p>
+                <!-- <p class="text-[20px] p-1 text-gray-600">Delivery will be in 5-12 min </p> -->
+            </div>
+
+            <div class="one small">
+                <div class="back bg3 rounded-2xl">
+                </div>
+                <p class="text-2xl text-gray-800 mt-2 text-center font-medium">Tasty Pav Bhaji</p>
+                <!-- <p class="text-[20px] p-1 text-gray-600">Delivery will be in 5-12 min </p> -->
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <!-- second_grid -->
+
+    <div class="next mx-auto mb-10">
+        <!-- <h1 class="text-[1.5rem] mt-4 mb-20 font-bold">Order From Best Restaurants</h1> -->
+        <!-- <hr> -->
+        <div class="images grid grid-cols-3 justify-around">
+            <div class="one small">
+                <div class="back bg4 rounded-2xl">
+                </div>
+                <p class="text-2xl text-gray-800 mt-2 text-center font-medium">Steam Momos</p>
+                <!-- <p class="text-[20px] p-1 text-gray-600">Delivery will be in 5-12 min </p> -->
+            </div>
+
+            <div class="one small">
+                <div class="back bg5 rounded-2xl">
+                </div>
+                <p class="text-2xl text-gray-800 mt-2 text-center font-medium">Fried Momos</p>
+                <!-- <p class="text-[20px] p-1 text-gray-600">Delivery will be in 5-12 min </p> -->
+            </div>
+
+            <div class="one small">
+                <div class="back bg6 rounded-2xl">
+                </div>
+                <p class="text-2xl text-gray-800 mt-2 text-center font-medium">Maggi</p>
+                <!-- <p class="text-[20px] p-1 text-gray-600">Delivery will be in 5-12 min </p> -->
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <!-- third_grid -->
+
+    <div class="next mx-auto mb-10">
+        <!-- <h1 class="text-[1.5rem] mt-4 mb-20 font-bold">Order From Best Restaurants</h1> -->
+        <!-- <hr> -->
+        <div class="images grid grid-cols-3 justify-around">
+            <div class="one small">
+                <div class="back bg7 rounded-2xl">
+                </div>
+                <p class="text-2xl text-gray-800 mt-2 text-center font-medium">Chilli Potato</p>
+                <!-- <p class="text-[20px] p-1 text-gray-600">Delivery will be in 5-12 min </p> -->
+            </div>
+
+            <div class="one small">
+                <div class="back bg8 rounded-2xl">
+                </div>
+                <p class="text-2xl text-gray-800 mt-2 text-center font-medium">Manchurian</p>
+                <!-- <p class="text-[20px] p-1 text-gray-600">Delivery will be in 5-12 min </p> -->
+            </div>
+
+            <div class="one small">
+                <div class="back bg9 rounded-2xl">
+                </div>
+                <p class="text-2xl text-gray-800 mt-2 text-center font-medium">Veg Biryani</p>
+                <!-- <p class="text-[20px] p-1 text-gray-600">Delivery will be in 5-12 min </p> -->
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- fourth_grid -->
+
+
+    <div class="next mx-auto mb-5">
+        <div class="images grid grid-cols-3 justify-around">
+            <div class="one">
+                <div class="back bg10 rounded-2xl">
+                </div>
+                <p class="text-2xl text-gray-800 mt-2 text-center font-medium">Roll</p>
+            </div>
+
+            <div class="one">
+                <div class="back bg11 rounded-2xl">
+                </div>
+                <p class="text-2xl text-gray-800 mt-2 text-center font-medium">Pasta</p>
+            </div>
+
+            <div class="one">
+                <div class="back bg12 rounded-2xl">
+                </div>
+                <p class="text-2xl text-gray-800 mt-2 text-center font-medium">Chole Bhature </p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <!-- footer from tail blocks -->
+    <div class="min text-center  bg-gray-200 flex justify-center items-center h-24">
+        <h1 class="text-3xl text-[#3d4046] text-[26px] font-bold">All Orders Will be Delivered in 5-12 min</h1>
+    </div>
+
+    <div class="tail_blocks_footer flex bg-black text-[#bcbaba] text-[20px] h-48 justify-evenly items-center">
+        <div class="1">
+            <div class="text-gray-50">Swiggy</div>
+            <div>second</div>
+        </div>
+        <div class="2">
+            <div class="text-gray-50">About</div>
+            <div class="">Contact</div>
+            <div class="">Help</div>
+            <div class="">Location</div>
+        </div>
+        <div class="3">
+            <div class="text-gray-50">Team</div>
+            <div class="">Support</div>
+            <div class="">Founders</div>
+            <div class="">Quality Food</div>
+        </div>
+    </div>
+
+
+    <div class="lastt h-10">
+        <div class="bg-black">
+            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+              <p class="text-gray-50 text-sm text-center sm:text-left">© 2024 Swiggy —
+                <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-50 ml-1" target="_blank">@swiggy.com</a>
+              </p>
+              <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                <a class="text-gray-50">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-3 text-gray-50">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-3 text-gray-50">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                  </svg>
+                </a>
+                <a class="ml-3 text-gray-50">
+                  <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                    <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </footer>
+    </div>
+    
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
